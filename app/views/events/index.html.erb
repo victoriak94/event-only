@@ -1,4 +1,13 @@
 events#index page
 
-
 <h1>EventOnly</h1>
+
+<% @events.each do |current_event| %>
+    <%= render 'single_event', event: current_event, show_name: true %>
+    <%= link_to "view", event_path(current_event) %>
+
+<%end%>
+
+<p>
+    <%= link_to 'New Event', new_event_path %>
+</p>
