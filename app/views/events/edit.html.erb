@@ -1,6 +1,7 @@
 events#edit page
 
+<h1>Edit Event</h1>
 
-<h1>Editing <%= link_to @location.name, location_path(@location) %></h1>
+<%= link_to 'Show all events', events_path %>
 
-<%= render 'location_form', location: @location %>
+<%= render 'event_form', event: @event %>

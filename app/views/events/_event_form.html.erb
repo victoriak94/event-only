@@ -1,0 +1,27 @@
+
+<%= form_for event do |e| %>
+    <p>
+        <%= e.label :name %>
+        <%= e.text_field :name %>
+    </p>
+
+    <p>
+        <%= e.label :date %>
+        <%= e.text_field :date %>
+    </p>
+
+    <p>
+        <%= e.label :city %>
+        <%= e.text_field :city %>
+    </p>
+
+    <p>
+        <%= e.label :capacity %>
+        <%= e.text_field :capacity %>
+    </p>
+
+    <p>
+        <%= e.submit %>
+    </p>
+
+<%end%>
